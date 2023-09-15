@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de envío</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<style>
+  header{
+  background-color: rbg(245,245,245);
+}
+
+header .logo{
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color:brown;
+  font-size: 1.35em;
+}
+
+header .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+header nav{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header a{
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color:black;
+}
+
+header a:hover{
+  color:rgb(109, 26, 26);
+}
+
+@media (min-width: 720px){
+   
+   header .container{
+       flex-direction:row;
+       justify-content: space-between;
+   }
+
+   header nav{ 
+       flex-direction: row;
+       padding-bottom: 0;
+       padding-right: 5px;
+   }
+  }
+</style>
+
+  <header>
+    <div class="container">
+        <p class="logo">Tamariarte</p>
+        <nav>
+            <a href="evidencia.html#hero">Inicio</a>
+            <a href="evidencia.html#nuevos-productos">Tienda</a>
+            <a href="evidencia.html#nosotros">Nosotros</a>
+            <a href="evidencia.html#contacto">Contacto</a>
+            <a href="evidencia.html#registro">Mi cuenta</a>
+        </nav>
+    </div>
+</header> 
+  <h1>¡Gracias por contactarnos!</h1>
+  <p>Tu mensaje ha sido enviado con éxito.</p>
+  <p>Nos pondremos en contacto contigo lo antes posible.</p>
+</body>
+</html>
