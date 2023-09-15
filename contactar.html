@@ -1,0 +1,95 @@
+<section id="contacto">
+    <link rel="stylesheet" href="contactar_estilo.css">
+    <style>
+        header{
+        background-color: rbg(245,245,245);
+      }
+      
+      header .logo{
+        margin: 0;
+        padding: 25px 30px;
+        font-weight: bold;
+        color:brown;
+        font-size: 1.35em;
+      }
+      
+      header .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+      }
+      
+      header nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 25px;
+      }
+      
+      header a{
+        padding: 5px 12px;
+        text-decoration: none;
+        font-weight: bold;
+        color:black;
+      }
+      
+      header a:hover{
+        color:rgb(109, 26, 26);
+      }
+      
+      @media (min-width: 720px){
+         
+        header .container{
+             flex-direction:row;
+             justify-content: space-between;
+         }
+      
+         header nav{ 
+             flex-direction: row;
+             padding-bottom: 0;
+             padding-right: 5px;
+         }
+        }
+      </style>
+    <header>
+        <div class="container">
+            <p class="logo">Tamariarte</p>
+            <nav>
+                <a href="evidencia.html#hero">Inicio</a>
+                <a href="evidencia.html#nuevos-productos">Tienda</a>
+                <a href="evidencia.html#nosotros">Nosotros</a>
+                <a href="evidencia.html#registro">Mi cuenta</a>
+            </nav>
+        </div>
+    </header> 
+        <div class="enviar-correo">
+            <form action="contactar.php" method="post">
+                <div class="solicitud" style = "margin-right: 49%; background-color:rgb(109, 26, 26);; padding: 30px; width: 100%">
+                    <h2 style = "margin-top: 1px; color: white;">Solicita información</h2>
+                    
+                    <p style = "margin-bottom: 19px; color: white; font-size: 15px; margin-top: -5px;">Estamos seguros de que podemos  cumplir <br> con las necesidades que requiere su empresa</p>
+                    <div class="top" style= "margin-bottom: 5px;">
+                        <input type="text" id="nombreCliente" style= "margin-right: 2px;" name="nombreCliente" autocomplete = "off" placeholder = "Nombre:" required>
+                        
+                        <input type="email"  id="correoCliente" name="correoCliente" autocomplete = "off" placeholder = "Correo:" required>
+                    </div>
+                        
+                    <div class="mid" style= "margin-bottom: 5px;">
+                        <input type="tel" id="telefono" name="telefono" style = "margin-right: 2px; width:100%" autocomplete = "off" placeholder = "Numero:" required>
+                    </div>
+                        
+                    <div class = "c-msj" style= "margin-bottom: -3px;">
+                        <textarea id="Comentarios" name="Comentarios" placeholder = "Escribe tu mensaje" required></textarea>
+                    </div>
+                    <div class = "btn-contacto" style = "margin-left: 29%; margin-top: 4px; margin-bottom: -10px;">
+                        <button style = "margin-left: 39px; color: white; background-color: black; margin: 10px 20px !important; text-decoration: none; border-top-right-radius: 15px; border-bottom-left-radius: 15px; display: flex; border: none; z-index: -1;" type="submit">
+                            Solicitar
+                            &nbsp;
+                            <i class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
